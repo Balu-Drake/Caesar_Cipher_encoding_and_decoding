@@ -64,13 +64,10 @@ def format_indian_currency(number):
     """
     # Convert to string and separate integer and decimal parts
     s = str(float(number))
-    if '.' in s:
-        parts = s.split('.')
-        integer_part = parts[0]
-        decimal_part = parts[1]
-    else:
-        integer_part = s
-        decimal_part = ''
+    parts = s.split('.')
+    integer_part = parts[0]
+    decimal_part = parts[1]
+    
 
     # Handle negative numbers
     sign = ''
