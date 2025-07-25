@@ -38,7 +38,7 @@ def caesar_cipher(text, shift, mode='encode'):
 print("--- Caesar Cipher ---")
 # Using hardcoded values to avoid EOFError in non-interactive environments
 message = input("Enter the Message :- ")
-shift_amount = 3
+shift_amount = int(input("Enter the Shift Amount :- "))
 
 encoded_message = caesar_cipher(message, shift_amount, mode='encode')
 print(f"Original Message: {message}")
@@ -110,9 +110,5 @@ def format_indian_currency(number):
 print("--- Indian Currency Formatting ---")
 # Using hardcoded values to avoid EOFError in non-interactive environments
 amount1 = float(input("Enter the Value :- "))
-amount2 = 12345.00
-amount3 = 9876543210.123
-amount4 = 500
-amount5 = -1234567.89
 
 print(f"Original Amount: {amount1} -> Formatted: {format_indian_currency(amount1)}")
